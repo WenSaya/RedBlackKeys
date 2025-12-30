@@ -68,3 +68,9 @@ If you encounter any issues or have suggestions, feel free to open an **Issue** 
 
 ---
 *Created with ❤️ for the Sky Community.*
+
+*   **If you feel this software has helped you, why not support the author? Your support is my motivation to keep going.**
+*   **如果您觉得这个软件帮助了你，不妨支持一下作者，您的支持是我前进的动力**
+![微信图片_20251230115422](https://github.com/user-attachments/assets/c19936bd-bca8-46e4-824d-18dc9b20cb31)
+![微信图片_20251230115408](https://github.com/user-attachments/assets/ccf1d55a-b030-47b7-bd7b-856ebe763a41)
+
