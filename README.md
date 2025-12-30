@@ -1,44 +1,70 @@
-# RedBlackKeys
-Project Introduction
-RedBlackKeys is an Android-based instrument auxiliary tool for the game "Sky: Children of the Light". By parsing song JSON files and leveraging the Android Accessibility Service, it achieves high-precision automated performance. It supports multi-finger chords and provides a highly flexible UI calibration solution.
-Key Features
-3x5 Anchor Box Calibration: A semi-transparent red grid that supports free dragging and resizing, perfectly adapting to instrument key positions on various device models.
-Multi-touch Chord Support: Optimized via GestureDescription to trigger multiple notes simultaneously, reproducing complex musical scores accurately.
-Side Search Drawer: A hidden search bar on the right side supporting fuzzy matching of the Assets song library, allowing quick song switching without leaving the game.
-High-Precision Playback Engine: Utilizes a virtual timeline alignment algorithm to ensure perfect rhythm synchronization after pause, resume, or reset operations.
-Click-Through Mechanism: In locked mode, the anchor box becomes transparent to touches, ensuring it doesn't interfere with game visibility or manual play.
-Usage Guide
-Grant Permissions: Launch the app and grant "Display over other apps (Overlay)" and "Accessibility Service" permissions.
-Accept Terms: Read and agree to the "Terms of Use" upon first run.
-Align Keys:
-Enter the game and open the instrument interface.
-Use the Move Icon on the floating console to reposition the panel.
-Use the Resize Icon to adjust the red grid so that its 15 cells precisely cover the 15 keys in the game.
-Select & Play:
-Click the Small Handle on the right edge of the screen to expand the search drawer.
-Enter keywords and click a song to load it.
-Click the Play Button on the main console to start the performance.
-<a name="chinese"></a>
-项目简介
-RedBlackKeys 是一款专为游戏《光遇》（Sky: Children of the Light）设计的安卓端乐器辅助演奏工具。通过解析乐谱 JSON 文件，利用安卓无障碍服务（Accessibility Service）实现高精度的自动点击，支持多指和弦演奏，并提供高度自由的 UI 校准方案。
-核心功能
-3x5 锚框校准：内置半透明红框网格，支持自由拖动与缩放，完美适配不同机型的琴键位置。
-多指和弦支持：基于 GestureDescription 优化，可同时触发多个音符，还原真实复杂的乐谱。
-侧边搜索抽屉：右侧隐藏式搜索栏，支持 Assets 曲库模糊匹配，无需切出游戏即可快速换歌。
-高精度播放引擎：采用虚拟时间轴对齐算法，确保暂停、继续、重置操作后的音律准确无误。
-点击穿透机制：在锁定模式下，锚框对触摸透明，不干扰游戏本身的视线与操作。
-使用指南
-权限授予：启动应用后，请依次授予“显示在其他应用上（悬浮窗）”权限和“无障碍服务”权限。
-协议确认：首次运行需阅读并同意《服务条款》。
-对齐琴键：
-进入游戏并打开乐器界面。
-使用悬浮窗中的 移动图标 挪动面板。
-使用 缩放图标 调整红色网格，使其 15 个格子精准覆盖游戏中的 15 个按键。
-选曲与播放：
-点击屏幕右边缘的 小手柄 展开搜索抽屉。
-输入关键词并点击曲目加载。
-点击主面板的 播放按钮 开始演奏。
-开发环境
-语言：Java
-平台：Android (支持 API 24+，建议使用物理机以获得最佳精度)
-技术栈：WindowManager, AccessibilityService, JSON, TreeMap, SharedPreferences.
+# 🎹 RedBlackKeys (Android) 
+### 高精度《Sky》自动演奏辅助工具 | High-Precision Auto-Player for Sky
+
+---
+A spark returns when you rebuild something you once broke
+## 🌟 项目简介 | Introduction
+
+**RedBlackKeys** 是一款专为游戏《光遇》（Sky: Children of the Light）打造的安卓端自动化演奏工具。它像一个精密的数字指挥棒，通过解析乐谱数据，驱动安卓系统的底层接口，为你呈现完美的乐曲演奏。
+
+**RedBlackKeys** is a specialized Android automation tool designed for "Sky: Children of the Light". It acts as a precision digital conductor, parsing music data and leveraging system-level interfaces to deliver flawless musical performances.
+
+---
+
+## ✨ 核心特性 | Features
+
+*   **🟥 3x5 自由锚框 (3x5 Anchor Grid)**: 半透明网格设计，支持自由拖动与缩放，完美覆盖各种机型的 15 个琴键。
+*   **🖐️ 多指和弦 (Chord Support)**: 完美模拟多点触控，支持复杂的和弦齐奏，音色还原丝滑。
+*   **🔍 侧边搜索抽屉 (Side Search Drawer)**: 隐藏式设计，支持 Assets 曲库模糊匹配，无需离开游戏即可一键点歌。
+*   **⏱️ 虚拟时间轴引擎 (Sync Engine)**: 采用虚拟起始时间算法，实现真正的实时播放、暂停与精准进度重置。
+*   **👻 点击穿透 (Touch-Through)**: 锚框区域针对游戏操作全透明，不干扰视线，不拦截手势。
+
+---
+
+## 🚀 使用指南 | Usage Guide
+
+### 🏮 中文步骤:
+1.  **权限开启**: 启动 App 后，点击按钮依次授予 **【悬浮窗权限】** 与 **【无障碍服务权限】**（这是自动点击的核心）。
+2.  **准备环境**: 进入《光遇》游戏，打开你要演奏的乐器界面。
+3.  **精准对齐**:
+    *   使用悬浮窗上的 **移动图标 ✥** 拖动面板位置。
+    *   使用 **缩放图标 ↘** 拉伸红色网格，使其 15 个格子精准覆盖游戏中的 15 个琴键。
+4.  **搜歌选曲**: 
+    *   点击屏幕右边缘的 **小手柄 ◀** 弹出搜索抽屉。
+    *   输入关键词过滤歌单，点击列表中的歌曲名进行加载。
+5.  **开始表演**: 
+    *   点击主面板的 **播放按钮 ▶** 即可开始。
+    *   点击 **停止按钮 ■** 可随时中断并重置进度。
+
+---
+
+### 🏮 English Steps:
+1.  **Grant Permissions**: Launch the app and grant **[Overlay Permission]** and **[Accessibility Service]** (essential for automated clicks).
+2.  **Preparation**: Enter "Sky: Children of the Light" and open any instrument interface.
+3.  **Alignment**:
+    *   Use the **Move Icon ✥** to reposition the console.
+    *   Use the **Resize Icon ↘** to adjust the red grid until the 15 cells perfectly align with the 15 keys in the game.
+4.  **Select Music**: 
+    *   Tap the **Small Handle ◀** on the right edge of the screen to pop up the search drawer.
+    *   Type keywords to filter the list and tap a song name to load it.
+5.  **Start Performance**: 
+    *   Tap the **Play Button ▶** on the main console to start.
+    *   Tap the **Stop Button ■** to halt and reset progress anytime.
+
+---
+
+## 🛠️ 技术栈 | Tech Stack
+
+*   **Language**: Java (Android SDK)
+*   **Core API**: `AccessibilityService` (Gesture Injection), `WindowManager` (Floating UI)
+*   **Logic**: High-Precision Loop Thread, TreeMap Scheduling, Fuzzy Search Algorithm.
+
+---
+
+## 📬 联系与反馈 | Feedback
+如果你在演奏过程中遇到任何问题或有改进建议，欢迎提交 **Issue** 或 **Pull Request**！
+
+If you encounter any issues or have suggestions, feel free to open an **Issue** or submit a **Pull Request**!
+
+---
+*Created with ❤️ for the Sky Community.*
