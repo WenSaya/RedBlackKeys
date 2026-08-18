@@ -1,6 +1,6 @@
 # 🎹 RedBlackKeys (Android) 
 ### 高精度《Sky》自动演奏辅助工具 | High-Precision Auto-Player for Sky
-
+qq群号（下载乐谱+app）：962377598
 ---
 A spark returns when you rebuild something you once broke
 ## 🌟 项目简介 | Introduction
